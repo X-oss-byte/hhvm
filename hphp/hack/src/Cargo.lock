@@ -3577,6 +3577,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "bstr 1.6.0",
  "bumpalo",
@@ -3589,6 +3590,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep_caml_builtins"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "ocamlrep",
  "ocamlrep_custom",
@@ -3598,6 +3600,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep_custom"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "ocamlrep",
  "ocamlrep_ocamlpool",
@@ -3606,6 +3609,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep_derive"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3616,6 +3620,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep_marshal"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "bitflags 1.3.2",
  "cc",
@@ -3634,6 +3639,7 @@ dependencies = [
 [[package]]
 name = "ocamlrep_ocamlpool"
 version = "0.1.0"
+source = "git+https://github.com/facebook/ocamlrep/?branch=main#ad330e8c631941e69f36c79402a0dcb460bc3308"
 dependencies = [
  "bumpalo",
  "cc",
@@ -4177,6 +4183,7 @@ dependencies = [
 name = "quickcheck"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "588f6378e4dd99458b60ec275b4477add41ce4fa9f64dcba6f15adccb19b50d6"
 dependencies = [
  "env_logger 0.8.4",
  "log",
@@ -4642,9 +4649,9 @@ dependencies = [
 
 [[package]]
 name = "rustix"
-version = "0.37.19"
+version = "0.37.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "acf8729d8542766f1b2cf77eb034d52f40d375bb8b615d0b147089946e16613d"
+checksum = "d4eb579851244c2c03e7c24f501c3432bed80b8f720af1d6e5b0e0f01555a035"
 dependencies = [
  "bitflags 1.3.2",
  "errno",
@@ -5567,7 +5574,9 @@ dependencies = [
 name = "tracing"
 version = "0.1.37"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8ce8c33a8d48bd45d624a6e523445fd21ec13d3653cd51f681abf67418f54eb8"
 dependencies = [
+ "cfg-if 1.0.0",
  "log",
  "pin-project-lite",
  "tracing-attributes",
@@ -5578,16 +5587,18 @@ dependencies = [
 name = "tracing-attributes"
 version = "0.1.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4017f8f45139870ca7e672686113917c71c7a6e02d4924eda67186083c03081a"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.29",
+ "syn 1.0.109",
 ]
 
 [[package]]
 name = "tracing-core"
 version = "0.1.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "24eb03ba0eab1fd845050058ce5e616558e8f8d8fca633e6b163fe25c797213a"
 dependencies = [
  "once_cell",
 ]
